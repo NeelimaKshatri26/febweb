@@ -1,0 +1,43 @@
+<html>
+<head>
+    <script type="text/javascript">
+        function validate(){
+            var pno=document.getElementById("phone").value;
+            if(pno.length!=10){
+                document.getElementById("phone1").innerHTML="<font> phone no should be equal to 10 </font>";
+            }
+            else{
+                document.getElementById("phone1").innerHTML=" ";
+            }
+        }
+
+    </script>
+</head>
+<body style="background-color:azure;">
+    <div >
+    <h1 align="center">Enter details</h1>
+    <table align="center" style="width: 40%; height: 40% ; font-size: larger;">
+        <form>
+            <tr>
+                <td>Enter receiver's name : </td><td><input type="text" placeholder="NAME"></td>
+            </tr>
+            <tr>
+                <td>Enter receiver's phone number : </td><td><input type="text" id="phone" placeholder="MOBILE"></td><td><span id="phone1"></span></td>
+            </tr>
+            <tr>
+                <td>Enter receiver's address : </td><td><input type="text" placeholder="ADDRESS"></td>
+            </tr>
+            <tr>
+                <td>Select the books : </td><td><input type="checkbox" name="a">Maths <input type="text"><br>
+                                                 <input type="checkbox" name="a">NCRT <input type="text"><br>
+                                                 <input type="checkbox" name="a">Biology <input type="text"><br>
+                                                 <input type="checkbox" name="a">Social <input type="text"><br>
+                                                 <input type="checkbox" name="a">Chemistry <input type="text"></td>
+            </tr>
+            <tr><td>Enter total no of books : </td><td><input type="text"></td></tr>
+            <tr><td></td> <td><br><input type="button" value="Submit" onclick="validate()"><a href="file:///C:/Users/HP/Desktop/bugsmashers/submit.html"></a></input></td></tr>
+        </form>
+    </table></div>
+</body>
+
+</html>

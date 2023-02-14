@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+.mySlides {display:none;}
+h2{
+   color:black;
+   font-style: italic;
+   text-align:center;
+}
+body{
+    background:linear-gradient(skyblue,pink)
+}
+</style>
+<body>
+
+<div class="w3-container">
+  <h2><b>SUBJECTS</b></h2>
+  
+</div>
+
+<div class="w3-content w3-display-container">
+
+<div class="w3-display-container mySlides">
+  <img src="https://myhomeworkhelp.com/wp-content/uploads/2021/07/futuristic-industry-4-0-engineering-concept.jpg" style="width:100%">
+  <div class="w3-display-bottomleft w3-large w3-container w3-padding-16 w3-black">
+    <button><a href="file:///C:/Users/HP/Desktop/bugsmashers/sixth.html">PHYSICS</a></button>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://leverageedublog.s3.ap-south-1.amazonaws.com/blog/wp-content/uploads/2020/05/06183223/General-Science.jpg" style="width:100%">
+  <div class="w3-display-bottomright w3-large w3-container w3-padding-16 w3-black">
+    <button><a href="file:///C:/Users/HP/Desktop/bugsmashers/seventh.html">General Science</a></button>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://res.cloudinary.com/grand-canyon-university/image/fetch/w_750,h_564,c_fill,g_faces,q_auto/https://www.gcu.edu/sites/default/files/images/articles/df44a5bfec32ecd8011755452d7bed35043923e5.jpg" style="width:100%">
+  <div class="w3-display-topleft w3-large w3-container w3-padding-16 w3-black">
+    <button><a href="file:///C:/Users/HP/Desktop/bugsmashers/sixth.html">CHEMISTRY</a></button>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://st2.depositphotos.com/3591429/7471/i/950/depositphotos_74714845-stock-photo-people-holding-cloud-with-sign.jpg" style="width:100%">
+  <div class="w3-display-topright w3-large w3-container w3-padding-16 w3-black">
+    <button><a href="file:///C:/Users/HP/Desktop/bugsmashers/seventh.html">SOCIAL</a></button>
+  </div>
+</div>
+
+<div class="w3-display-container mySlides">
+  <img src="https://media.istockphoto.com/id/1336355737/vector/a-top-view-of-a-geometry-class-homework-a-stationery-set.jpg?s=612x612&w=0&k=20&c=dCSzycmHXiJ0q_xzuFvMdajE1J0VnXNG7no2261jf5k=" style="width:100%">
+  <div class="w3-display-middle w3-large w3-container w3-padding-16 w3-black">
+    <button><a href="file:///C:/Users/HP/Desktop/bugsmashers/sixth.html">MATHEMATICS</a></button>
+  </div>
+</div>
+
+<button class="w3-button w3-display-left w3-black" onclick="plusDivs(-1)">&#10094;</button>
+<button class="w3-button w3-display-right w3-black" onclick="plusDivs(1)">&#10095;</button>
+
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+</body>
+</html>

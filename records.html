@@ -1,0 +1,98 @@
+<html>
+    <head>
+        <style>
+        body{
+            background-image: url("https://bestanimations.com/media/books/402238143pretty-book-bench-nature-water-outdoors-animated-gif.gif");
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        th{
+            color:dodgerblue;
+        }
+        td{
+            color:antiquewhite;
+        }
+        </style>
+        <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script>
+        function incrementValue()
+        
+{
+    var value = parseInt(document.getElementById('number').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value=value+3;
+    document.getElementById('number').value = value;
+    var value = parseInt(document.getElementById('number1').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value++;
+    document.getElementById('number1').value = value;
+    var value = parseInt(document.getElementById('number2').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value=value+4;
+    document.getElementById('number2').value = value;
+    var value = parseInt(document.getElementById('number3').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value=value-1;
+    document.getElementById('number3').value = value;
+    var value = parseInt(document.getElementById('number4').value, 10);
+    value = isNaN(value) ? 0 : value;
+    value=value+2;
+    document.getElementById('number4').value = value;
+
+}
+function myFunction(){
+    document.getElementById("myForm").reset();
+}
+  </script>
+    </head>
+    <body>
+        <div class="container">  
+            
+            <table class="table table-condensed">
+                <form id="myForm">     
+              <thead>
+                <tr>
+                  <th>S.No</th>
+                  <th>Subjects</th>
+                  <th>No of books available</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Physics</td>
+                  <td style="color:black"><input type="text" id="number" value="3"/></td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Mathematics</td>
+                  <td style="color:black"><input type="text" id="number1" value="1"/></td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Social</td>
+                  <td style="color:black"><input type="text" id="number2" value="10"/></td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Chemistry</td>
+                    <td style="color:black"><input type="text" id="number3" value="20"/></td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>General science</td>
+                    <td style="color:black"><input type="text" id="number4" value="8"/></td>
+                  </tr>
+              </tbody>
+            </input>
+            </form>
+            </table>
+          </div>
+            <center><input type="button" onclick="incrementValue()" value="Refresh" /></center>
+            <center><input type="button" onclick="myFunction()" value="Reset form" /></center>
+    </body>
+</html>
